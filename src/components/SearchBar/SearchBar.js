@@ -1,0 +1,20 @@
+import s from "./style.module.css";
+import { Search as SearchIcon } from "react-bootstrap-icons";
+export const SearchBar = ({ onClickSearch }) => {
+  function submit(e) {
+    if (e.key === "Enter" && e.target.value.trim() !== "") {
+      onClickSearch(e.target.value);
+    }
+  }
+  return (
+    <>
+      <SearchIcon size={27} className={s.icon} />
+      <input
+        onKeyUp={submit}
+        className={s.input}
+        type="text"
+        placeholder="Search Movie and TV Shows..."
+      />
+    </>
+  );
+};

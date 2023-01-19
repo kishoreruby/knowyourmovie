@@ -1,0 +1,19 @@
+.logo_title {
+  display: flex;
+}
+.title {
+  font-weight: 400;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+}
+
+.subtitle {
+  margin-left: 5px;
+  white-space: nowrap;
+}
